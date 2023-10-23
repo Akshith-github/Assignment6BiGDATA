@@ -1,5 +1,3 @@
-# Assignment6BiGDATA
-
 # Part-2: Manipulating Data using Python DataFrames (DF)
 
 ## 1. Open your Data File
@@ -86,3 +84,46 @@ What would be the command for computing the average lifeExp per year (for all co
 [Take Snapshot#3]
 
 Note the lifeExp increase.
+
+## 6. What if we want to compute the average lifeExp and Gdp by continent, instead of the whole world?
+
+```python
+df.groupby("continent")["lifeExp", "gdpPercap"].mean()
+```
+
+[Take Snapshot#4] (last groupby command)
+
+## 7. Frequency Counts
+
+Use the `nunique()` DF function on `df`, and list how many (number) unique values are there for each DF attribute.
+
+[Take Snapshot#5] (`df.nunique()` output)
+
+### d. Qst#4:
+
+Try `value_counts()` and explain the difference with `nunique()`
+
+# Part-3: Plotting Data using Python Matplotlib
+
+Plotting your data, to get an initial Insight at how it looks like, is very essential to pinpointing trends and patterns, identifying outliers and missing data, and thus easing understanding data and cleaning it. Most Important Is gaining a primary Insight on possible correlations between different data attributes and thus advising suitable (ML) data models.
+
+Let's say, we want to study the variance of Life Expectancy over time.
+
+## 7. Execute the following commands:
+
+[Take Snapshot#6] (like snapshot above)
+
+**Deliverables:**
+
+Create a new Word document, put your name at the top of the document along with the assignment number, then:
+
+- Answer questions (4 In total)
+- Paste snapshots (6 in total).
+
+Click on “save as”, select (pdf) as “file format”, and save your file using the following naming:
+
+`CPSC6121-LASTNAME.pdf`
+
+Submit your pdf file in CougarView (under Assignment#6)
+
+→ This is an Individual
